@@ -4,22 +4,27 @@ import java.util.Scanner;
 
 public class Esercizio3 {
 
-  public static void main(String[] args) {
-      System system = null;
-      system.out.println("Scrivi una stringa");
-        String s = new Scanner(System.in).nextLine();
-        int i = 0;
-        while (i < s.length()) {
-            System.out.print(s.charAt(i));
-            if (i < s.length() - 1) {
-                System.out.print(",");
-            }
-            i++;
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
-            if (s.equals("q")) {
-                break;
-            }
+        String parola;
 
+        do {
+            system.out.println("Scrivi una stringa");
+            parola = scanner.nextLine();
+
+            if (parola.equals(:q)){
+                for (int i = 0; i < parola.length(); i++) {
+                    system.out.print(parola.charAt(i));
+
+                    if (i != parola.length() - 1) {
+                        system.out.print(",");
+                    }
+                    System out.println();
+                }
+
+            } while (!parola.equals(":q")) ;
         }
+
     }
 }
