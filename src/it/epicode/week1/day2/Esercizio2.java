@@ -1,9 +1,15 @@
 package it.epicode.week1.day2;
 
+import java.util.Scanner;
+
 public class Esercizio2 {
     public static void main(String[] args) {
-        int x = 3;
-        switch (x) {
+        Scanner scanner = new scanner(system.in);
+        system.out.println("scrivi un numero da 0 a 3");
+
+        int numero = scanner.nextint();
+
+        switch (numero) {
             case 0:
                 System.out.println("x è 0");
                 break;
